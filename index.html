@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+
+<style>
+    *,::before,::after{
+        padding: 0;
+        margin: 0;
+        box-sizing: inherit;
+    }
+    html{
+        box-sizing: border-box;
+        font-size: 62.5%;
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .container a{
+        position: relative;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        margin-inline: 1rem;
+        padding: .5rem 1rem;
+        transition: all .2s;
+    }
+    .container:hover a{
+        opacity: .2;
+        filter: blur(.1rem);
+    }
+    .container a:hover{
+        opacity: 1;
+        filter: blur(0rem);
+    }
+
+</style>
+
+<body>
+    <div class="container">
+       <a href="#">home</a>
+       <a href="#">about</a>
+       <a href="#">services</a>
+       <a href="#">portfolio</a>
+       <a href="#">contact</a>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
